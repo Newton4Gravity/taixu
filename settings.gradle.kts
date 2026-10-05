@@ -11,7 +11,9 @@ pluginManagement {
             mavenCentral()
             gradlePluginPortal()
         } else {
-            gradlePluginPortal()
+            // Use Aliyun mirrors for plugins and artifacts
+            // gradlePluginPortal() (plugins.gradle.org) is unreachable from this environment
+            // Official repos (google(), mavenCentral()) fail: Maven Central 403, Google Maven 404
             maven {
                 url = uri("https://maven.aliyun.com/repository/google")
                 isAllowInsecureProtocol = false
@@ -20,13 +22,8 @@ pluginManagement {
                 url = uri("https://maven.aliyun.com/repository/central")
             }
             maven {
-                url = uri("https://maven.aliyun.com/repository/gradle-plugin")
-            }
-            maven {
                 url = uri("https://maven.aliyun.com/repository/public")
             }
-            google()
-            mavenCentral()
         }
     }
 }
@@ -46,6 +43,7 @@ dependencyResolutionManagement {
             google()
             mavenCentral()
         } else {
+            // Official repos (google(), mavenCentral()) fail: Maven Central 403, Google Maven 404
             maven {
                 url = uri("https://maven.aliyun.com/repository/google")
                 isAllowInsecureProtocol = false
@@ -56,8 +54,6 @@ dependencyResolutionManagement {
             maven {
                 url = uri("https://maven.aliyun.com/repository/public")
             }
-            google()
-            mavenCentral()
         }
         // Kadb's SPAKE2 Android impl only on JitPack; restrict to exact group to avoid widening resolution scope.
         maven {

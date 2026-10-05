@@ -102,7 +102,7 @@ mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
 
 # Third-party Android
 shizuku = { group = "moe.shizuku", name = "shizuku-api", version.ref = "shizuku" }
-bundles-shizuku = { group = "moe.shizuku", name = "shizuku-bundled", version.ref = "shizuku" }
+shizuku-bundled = { group = "moe.shizuku", name = "shizuku-bundled", version.ref = "shizuku" }
 hiddenapi-bypass = { group = "moe.shizuku", name = "hiddenapi-bypass", version.ref = "hiddenapiBypass" }
 kadb = { group = "com.github.Flyfish233", name = "kadb", version.ref = "kadb" }
 termux-terminal-emulator = { group = "com.termux", name = "terminal-emulator", version.ref = "termuxTerminalEmulator" }
@@ -124,7 +124,7 @@ coil-core = { group = "io.coil-kt", name = "coil-core", version.ref = "coil" }
 logging = { group = "com.github.tony19", name = "logback-android", version.ref = "logging" }
 
 [bundles]
-bundles.shizuku = ["shizuku", "bundles-shizuku"]
+shizuku = ["shizuku", "shizuku-bundled"]
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
