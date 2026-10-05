@@ -1,0 +1,17 @@
+# Build outputs
+.build/
+build/
+.gradle/
+local.properties
+*.iml
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# AI config (contains large/temporary files)
+.aicode/
+
+# Lock files
+skills-lock.json

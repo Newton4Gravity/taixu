@@ -1,0 +1,137 @@
+[versions]
+agp = "8.7.2"
+kotlin = "2.0.21"
+kotlinxCoroutines = "1.8.1"
+kotlinxSerialization = "1.6.3"
+koin = "3.5.6"
+androidxCoreKtx = "1.13.1"
+androidxRoom = "2.6.1"
+androidxDatastore = "1.1.4"
+androidxSecurityCrypto = "1.1.0-alpha06"
+androidxWebkit = "1.8.0"
+androidxLifecycle = "2.8.4"
+androidxActivity = "1.9.1"
+androidxFragment = "1.8.3"
+androidxComposeBom = "2024.10.01"
+androidxComposeCompiler = "1.5.14"
+okhttp = "4.12.0"
+okio = "3.9.1"
+moshi = "1.15.1"
+retrofit = "2.11.0"
+xz = "1.9"
+zstd = "1.5.6-4"
+junit = "4.13.2"
+junitJupiter = "5.11.0"
+robolectric = "4.11"
+mockk = "1.13.15"
+shizuku = "13.5.3"
+hiddenapiBypass = "1.2.0"
+kadb = "1.0.0"
+termuxTerminalEmulator = "0.4.0"
+prootDistro = "5.8.0"
+kotlinxDatetime = "0.6.1"
+kotlinxCli = "0.5.0"
+kotlinxIo = "0.3.4"
+kotlinxHtml = "0.8.0"
+kotlinxCollections = "0.4.0"
+material3 = "1.3.1"
+accompanist = "0.32.0"
+coil = "2.6.0"
+logging = "2.2.3"
+
+[libraries]
+# AndroidX
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCoreKtx" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "androidxRoom" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "androidxRoom" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "androidxRoom" }
+androidx-datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "androidxDatastore" }
+androidx-datastore-preferences-core = { group = "androidx.datastore", name = "datastore-preferences-core", version.ref = "androidxDatastore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "androidxLifecycle" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "androidxActivity" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "androidxFragment" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+androidx-constraintlayout-compose = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version = "1.1.0" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version = "2.8.4" }
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version = "1.2.0" }
+
+# Koin
+koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+koin-androidx-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
+koin-androidx-viewmodel = { group = "io.insert-koin", name = "koin-androidx-viewmodel", version.ref = "koin" }
+
+# Kotlinx
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinxDatetime" }
+kotlinx-cli = { group = "org.jetbrains.kotlinx", name = "kotlinx-cli", version.ref = "kotlinxCli" }
+kotlinx-io = { group = "org.jetbrains.kotlinx", name = "kotlinx-io", version.ref = "kotlinxIo" }
+kotlinx-html = { group = "org.jetbrains.kotlinx", name = "kotlinx-html-jvm", version.ref = "kotlinxHtml" }
+kotlinx-collections-immutable = { group = "org.jetbrains.kotlinx", name = "kotlinx-collections-immutable", version.ref = "kotlinxCollections" }
+
+# Network
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+okhttp-mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "okhttp" }
+okio = { group = "com.squareup.okio", name = "okio", version.ref = "okio" }
+moshi = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshi" }
+moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshi" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
+# AndroidX
+androidx-security-crypto = { group = "androidx.security", name = "security-crypto", version.ref = "androidxSecurityCrypto" }
+androidx-webkit = { group = "androidx.webkit", name = "webkit", version.ref = "androidxWebkit" }
+
+# Compression
+xz = { group = "org.tukaani", name = "xz", version.ref = "xz" }
+zstd-jni = { group = "com.github.luben", name = "zstd-jni", version.ref = "zstd" }
+
+# Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junitJupiter" }
+robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+
+# Third-party Android
+shizuku = { group = "moe.shizuku", name = "shizuku-api", version.ref = "shizuku" }
+bundles-shizuku = { group = "moe.shizuku", name = "shizuku-bundled", version.ref = "shizuku" }
+hiddenapi-bypass = { group = "moe.shizuku", name = "hiddenapi-bypass", version.ref = "hiddenapiBypass" }
+kadb = { group = "com.github.Flyfish233", name = "kadb", version.ref = "kadb" }
+termux-terminal-emulator = { group = "com.termux", name = "terminal-emulator", version.ref = "termuxTerminalEmulator" }
+termux-terminal-view = { group = "com.termux", name = "terminal-view", version.ref = "termuxTerminalEmulator" }
+
+# Material3
+material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
+material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended", version = "1.7.0" }
+
+# Accompanist
+accompanist-permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanist" }
+accompanist-systemuicontroller = { group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "accompanist" }
+
+# Coil
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+coil-core = { group = "io.coil-kt", name = "coil-core", version.ref = "coil" }
+
+# Logging
+logging = { group = "com.github.tony19", name = "logback-android", version.ref = "logging" }
+
+[bundles]
+bundles.shizuku = ["shizuku", "bundles-shizuku"]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version = "2.0.21-1.0.14" }
+hilt = { id = "com.google.dagger.hilt", version = "2.51.1" }
+taixu-android-library = { id = "taixu.android.library" }
